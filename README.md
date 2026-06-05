@@ -137,4 +137,5 @@ MIT License — feel free to use, modify, and distribute.
 Pull requests are welcome! For major changes, please open an issue first.
 
 👨‍💻 Author
-Built with ❤️ using LangChain + Groq + Streamlit
+Built with M Hassan Daood
+
