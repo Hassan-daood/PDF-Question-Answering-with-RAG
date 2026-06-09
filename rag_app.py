@@ -45,7 +45,7 @@ retriever = vectordb.as_retriever()
 # ===========================
 # 6. FREE LLM using Groq (Llama 3)
 # ===========================
-api_key = os.environ.get("GROQ_API_KEY")
+api_key = os.environ.get("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")
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
     groq_api_key=api_key
