@@ -12,7 +12,7 @@ from langchain_groq import ChatGroq  # FREE Llama 3 model
 # 1. Load PDF
 # ===========================
 loader = PyPDFLoader(
-        r"F:\semester 5\Python ML projects\Resume analyzer\Sample Testing files\ai-ml-fresher.pdf"
+        "ai-ml-fresher.pdf"
 )
 documents = loader.load()
 
