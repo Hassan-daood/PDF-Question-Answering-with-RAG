@@ -2,7 +2,7 @@ import os
 import streamlit as st
 
 from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
@@ -18,7 +18,7 @@ def load_rag():
     st.write("Loading PDF...")
 
     loader = PyPDFLoader(
-        r"F:\semester 5\Python ML projects\Resume analyzer\Sample Testing files\ai-ml-fresher.pdf"
+        "ai-ml-fresher.pdf"
     )
     documents = loader.load()
 
