@@ -49,7 +49,7 @@ def load_rag():
 
     st.write("Loading Groq LLM...")
 
-    api_key = os.environ.get("GROQ_API_KEY")
+    api_key = os.environ.get("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")
 
     llm = ChatGroq(
         model="llama-3.1-8b-instant",
