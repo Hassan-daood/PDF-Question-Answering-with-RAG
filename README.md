@@ -1,9 +1,9 @@
-#PDF Question Answering with RAG (Retrieval-Augmented Generation)"
+# PDF Question Answering with RAG (Retrieval-Augmented Generation)
 
 Ask questions from any PDF using free AI — powered by LangChain, Groq (Llama 3), and HuggingFace Embeddings.
 
 
-#What is this project?
+# What is this project?
 This project lets you chat with any PDF file using a RAG (Retrieval-Augmented Generation) pipeline. Instead of a generic AI answer, the model searches your actual document and gives you accurate, context-aware responses grounded in the PDF content.
 It comes in two flavors:"
 
@@ -11,7 +11,7 @@ ragg_app.py — Terminal-based CLI interface
 streamlit_app.py — Beautiful web UI using Streamlit
 
 
-#Architecture Overview
+# Architecture Overview
 PDF File
    ↓
 PyPDFLoader          ← Loads and parses the PDF
@@ -31,7 +31,7 @@ RetrievalQA Chain               ← Combines retriever + LLM
    ↓
 Answer ✅"
 
-Features
+# Features
 
 Load and parse any PDF document
 Semantic search using vector embeddings
@@ -45,7 +45,7 @@ Completely free to run (no OpenAI key needed)
 Tech Stack
 ComponentTool / LibraryPDF Loadinglangchain-community → PyPDFLoaderText SplittingRecursiveCharacterTextSplitterEmbeddingsHuggingFaceEmbeddings (MiniLM-L6-v2)Vector StoreChromaDBLLMGroq → llama-3.1-8b-instantRAG ChainLangChain → RetrievalQAWeb UIStreamlit
 
-#Installation
+# Installation
 1. Clone the repository
 bashgit clone https://github.com/your-username/pdf-rag-qa.git
 cd pdf-rag-qa
@@ -87,7 +87,7 @@ python# In the splitter
 chunk_size=500,       # Increase for more context per chunk
 chunk_overlap=50      # Increase to avoid missing info at chunk boundaries
 
-Project Structure
+# Project Structure
 pdf-rag-qa/
 │
 ├── ragg_app.py          # CLI version of the RAG app
@@ -104,12 +104,12 @@ chromadb
 sentence-transformers
 huggingface-hub
 pypdf
-streamlit"
+streamlit
 
 Environment Variables
 VariableDescriptionGROQ_API_KEYYour Groq API key (free at console.groq.com)
 
-How RAG Works (Simple Explanation)
+# How RAG Works (Simple Explanation)
 Traditional AI doesn't know what's in your PDF. RAG solves this by:
 
 Splitting your PDF into small text chunks
@@ -128,14 +128,14 @@ Yes! Just change the file path in the script.
 Q: Can I swap the LLM?
 Yes. You can replace ChatGroq with any LangChain-compatible LLM (OpenAI, Ollama, etc.).
 Q: Does it work on large PDFs?
-Yes, but processing time increases with file size. The first load may take a minute."
+Yes, but processing time increases with file size. The first load may take a minute.
 
 # License
 MIT License — feel free to use, modify, and distribute."
 
-#Contributing
-Pull requests are welcome! For major changes, please open an issue first."
+# Contributing
+Pull requests are welcome! For major changes, please open an issue first.
 
-#Author
-Built with M Hassan Daood"
+# Author
+Built with M Hassan Daood
 
