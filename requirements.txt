@@ -6,3 +6,4 @@ sentence-transformers
 huggingface-hub
 pypdf
 streamlit
+torch
