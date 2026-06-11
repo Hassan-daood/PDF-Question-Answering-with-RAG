@@ -17,9 +17,7 @@ def load_rag():
 
     st.write("Loading PDF...")
 
-    loader = PyPDFLoader(
-        "ai-ml-fresher.pdf"
-    )
+    loader = PyPDFLoader("ai-ml-fresher.pdf")
     documents = loader.load()
 
     st.write("Splitting PDF...")
@@ -49,11 +47,10 @@ def load_rag():
 
     st.write("Loading Groq LLM...")
 
-
-   llm = ChatGroq(
-    model="llama-3.1-8b-instant",
+    llm = ChatGroq(
+        model="llama-3.1-8b-instant",
     groq_api_key=st.secret["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"]
-)
+    )
 
     st.write("Building RAG pipeline...")
 
