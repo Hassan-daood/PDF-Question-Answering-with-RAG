@@ -50,10 +50,10 @@ def load_rag():
     st.write("Loading Groq LLM...")
 
 
-    llm = ChatGroq(
-        model="llama-3.1-8b-instant",
-        groq_api_key="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"
-    )
+   llm = ChatGroq(
+    model="llama-3.1-8b-instant",
+    groq_api_key=st.secret["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"]
+)
 
     st.write("Building RAG pipeline...")
 
