@@ -1,5 +1,7 @@
-langchain
-langchain-community
+langchain==0.1.16
+langchain-community==0.0.32
+langchain-core==0.1.42
+groq
 langchain-text-splitters
 langchain-groq
 chromadb
@@ -8,3 +10,4 @@ huggingface-hub
 pypdf
 streamlit
 torchvision
+
